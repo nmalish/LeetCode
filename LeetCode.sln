@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC.506.RelativeRanks", "LC.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC.3075.MaximizeHappinessofSelectedChildren", "LC.3075.MaximizeHappinessofSelectedChildren\LC.3075.MaximizeHappinessofSelectedChildren.csproj", "{4335594A-2CA9-42A5-ABCD-DDBD1D2835C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC.C.SquaresOfSortedArray", "LC.C.SquaresOfSortedArray\LC.C.SquaresOfSortedArray.csproj", "{B83A017B-2A34-4BBC-9361-5B6B23C187A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{4335594A-2CA9-42A5-ABCD-DDBD1D2835C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4335594A-2CA9-42A5-ABCD-DDBD1D2835C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4335594A-2CA9-42A5-ABCD-DDBD1D2835C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B83A017B-2A34-4BBC-9361-5B6B23C187A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83A017B-2A34-4BBC-9361-5B6B23C187A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83A017B-2A34-4BBC-9361-5B6B23C187A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83A017B-2A34-4BBC-9361-5B6B23C187A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
