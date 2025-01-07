@@ -9,12 +9,12 @@ public static class SolutionTests
 
         var solution = new Solution();
         var result = solution.DoubleIt(head);
-        
-       var equals = result.Equals(new ListNode(2, new ListNode(4, new ListNode(8))));
-       
-       Assert.True(equals);
+
+        var equals = result.Equals(new ListNode(2, new ListNode(4, new ListNode(8))));
+
+        Assert.True(equals);
     }
-    
+
     [Fact]
     public static void DoubleLinkedListWithOverflow()
     {
@@ -22,9 +22,9 @@ public static class SolutionTests
 
         var solution = new Solution();
         var result = solution.DoubleIt(head);
-        
+
         var equals = result.Equals(new ListNode(1, new ListNode(9, new ListNode(9, new ListNode(8)))));
-       
+
         Assert.True(equals);
     }
 
@@ -36,12 +36,12 @@ public static class SolutionTests
         var equalHead = new ListNode(1, new ListNode(3));
 
         var result = head.Equals(equalHead);
-        
+
         Assert.True(result);
     }
-    
-    
-    
+
+
+
     [Fact]
     public static void EqualShouldNotBeEqualTest()
     {
@@ -49,8 +49,8 @@ public static class SolutionTests
         var equalHead = new ListNode(1, new ListNode(3));
 
         var result = head.Equals(equalHead);
-        
+
         Assert.False(result);
     }
-    
+
 }

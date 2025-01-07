@@ -27,7 +27,7 @@ public class Solution
         var head = new ListNode(nodes[^1]);
         for (int i = 1; i < nodes.Length; i++)
         {
-            head = new ListNode(nodes[^(i + 1)], head); 
+            head = new ListNode(nodes[^(i + 1)], head);
         }
 
         return head;
@@ -40,7 +40,8 @@ public class Solution
             return head;
         }
         ListNode next = null;
-        while (head != null){
+        while (head != null)
+        {
             ListNode? n2 = head.next;
             // next 
             // head.next = next;
@@ -52,15 +53,15 @@ public class Solution
         // head.next.next = head;
         // head = head.next;
         // head.next!.next = null;
-        
-        
+
+
         // 2
         //
         // var prev = head.next;
         // prev.next = head;
-        
-        
-        
+
+
+
 
         return head;
     }

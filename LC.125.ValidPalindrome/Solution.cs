@@ -21,32 +21,32 @@ public class Solution
 
         return true;
     }
-    
+
     // Other solution from LC
     public bool IsPalindrome1(string s)
-    {    
+    {
         var clean = s.ToLower().Where(char.IsLetterOrDigit);
         return clean.Reverse().SequenceEqual(clean);
     }
-    
-    
-    public bool IsPalindrome2(string s) 
+
+
+    public bool IsPalindrome2(string s)
     {
-        for (int i = 0, j = s.Length - 1 ; j > i ; )
+        for (int i = 0, j = s.Length - 1; j > i;)
         {
-            if ( !char.IsLetterOrDigit(s[i]) )
+            if (!char.IsLetterOrDigit(s[i]))
             {
                 i++;
                 continue;
             }
 
-            if ( !char.IsLetterOrDigit(s[j]) )
+            if (!char.IsLetterOrDigit(s[j]))
             {
                 j--;
                 continue;
             }
 
-            if ( char.ToLower(s[i++]) != char.ToLower(s[j--]) )
+            if (char.ToLower(s[i++]) != char.ToLower(s[j--]))
             {
                 return false;
             }

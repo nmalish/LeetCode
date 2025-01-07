@@ -2,7 +2,7 @@ namespace LC._125.ValidPalindrome;
 
 public class SolutionTests
 {
-    [Theory] 
+    [Theory]
     [InlineData("A man, a plan, a canal: Panama")]
     [InlineData("radar")]
     [InlineData(" ")]
@@ -10,7 +10,7 @@ public class SolutionTests
     {
         Solution solution = new();
         var actual = solution.IsPalindrome(value);
-        
+
         Assert.True(actual);
     }
 
@@ -24,7 +24,7 @@ public class SolutionTests
     {
         Solution solution = new();
         var actual = solution.IsPalindrome(value);
-        
+
         Assert.False(actual);
     }
 }

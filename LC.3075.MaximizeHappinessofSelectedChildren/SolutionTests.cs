@@ -9,7 +9,7 @@ public class SolutionTests
 
         Assert.Equal(4, result);
     }
-    
+
     [Fact]
     public void Test2()
     {

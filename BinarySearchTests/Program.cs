@@ -22,17 +22,17 @@ public class BinarySearch
         {
             int head = (low + high) / 2;
             int current = data[head];
-            
+
             if (current == value) return head;
             if (value > current)
-                low = head ; // head + 1 // TAKE INTO ACCOUNT THAT WE already checked head
+                low = head; // head + 1 // TAKE INTO ACCOUNT THAT WE already checked head
             else
                 high = head; // head - 1
         }
 
         return index;
     }
-    
+
     // BinarySearchRecursion
     public int Search(int[] data, int value, int low, int high)
     {

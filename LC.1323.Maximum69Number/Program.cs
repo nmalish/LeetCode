@@ -31,7 +31,7 @@ public static class Solution
 
         return num;
     }
-    
+
     public static int Maximum69NumberBuildIn(int num)
     {
         string s = num.ToString();

@@ -11,7 +11,7 @@ public class Solution
         if (first >= 10)
         {
             result.val = 1;
-            result.next = new ();
+            result.next = new();
             result = result.next;
         }
 
@@ -23,7 +23,7 @@ public class Solution
             {
                 current += 1;
             }
-            
+
             result.val = current;
 
             if (head.next is not null)
@@ -31,7 +31,7 @@ public class Solution
                 result.next = new();
                 result = result.next;
             }
-           
+
             head = head.next;
         }
 

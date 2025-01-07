@@ -2,15 +2,15 @@
 // [1,2,4,4]    sum=8
 
 Solution solution = new();
-bool result = solution.PairOfElementsEqualsToSumExist(new []{1,2,3,9}, 8);
-bool result1 = solution.PairOfElementsEqualsToSumExist(new []{1,2,4,4}, 8);
+bool result = solution.PairOfElementsEqualsToSumExist(new[] { 1, 2, 3, 9 }, 8);
+bool result1 = solution.PairOfElementsEqualsToSumExist(new[] { 1, 2, 4, 4 }, 8);
 
 Console.WriteLine(result);
 Console.WriteLine(result1);
 
 Solution2 solution2 = new();
 bool result2 = solution2.HasPairWithSum(new[] { 1, 2, 3, 9 }, 8);
-bool result3 = solution2.HasPairWithSum(new []{1,2,4,4}, 8);
+bool result3 = solution2.HasPairWithSum(new[] { 1, 2, 4, 4 }, 8);
 
 Console.WriteLine(result2);
 Console.WriteLine(result3);
@@ -41,7 +41,7 @@ public class Solution2
     public bool HasPairWithSum(int[] data, int sum)
     {
         HashSet<int> collection = new(); // TODO: complements
-        for(int i=0; i < data.Length; i++)
+        for (int i = 0; i < data.Length; i++)
         {
             int subtraction = sum - data[i];
             if (collection.Contains(subtraction))

@@ -13,10 +13,10 @@ public class BinarySearchTests
 
         BinarySearch binarySearch = new();
         int index2 = binarySearch.MySearch(data, value);
-        
+
         Assert.Equal(index1, index2);
     }
-    
+
     [Fact]
     public void Search_EqualToDefault()
     {
@@ -25,13 +25,13 @@ public class BinarySearchTests
         const int length = 10;
         Random rnd = new Random();
         int[] data = Enumerable
-            .Repeat(0,length) 
+            .Repeat(0, length)
             .Select(i => rnd.Next(low, high))
             .OrderBy(i => i)
             .ToArray();
 
         int value = data[rnd.Next(0, length)];
-        
+
         int index1 = Array.IndexOf(data, value);
 
         BinarySearch binarySearch = new();
@@ -50,18 +50,18 @@ public class BinarySearchTests
         while (true)
         {
             int[] data = Enumerable
-                .Repeat(0,length) 
+                .Repeat(0, length)
                 .Select(i => rnd.Next(low, high))
                 .OrderBy(i => i)
                 .ToArray();
 
             int value = data[rnd.Next(0, length)];
-            
+
             int index1 = Array.IndexOf(data, value);
 
             BinarySearch binarySearch = new();
             int index2 = binarySearch.MySearch(data, value);
-            
+
             if (index1 != index2)
             {
                 Assert.NotEqual(index1, index2);

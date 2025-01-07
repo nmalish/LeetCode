@@ -28,7 +28,7 @@ public static class Solution
                 chars.Add(s[i]);
             }
         }
-        
+
         return null;
     }
 }
